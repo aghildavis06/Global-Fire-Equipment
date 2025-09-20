@@ -530,3 +530,17 @@ h6,
     margin-bottom: -75px;
   }
 }
+.vendor-carousel .item img {
+  width: 150px;      /* fixed width */
+  height: 80px;      /* fixed height */
+  object-fit: contain; /* keeps aspect ratio without cropping */
+  margin: auto;
+  display: block;
+}
+
+.testimonial-item {
+  min-height: 350px; /* adjust based on design */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
