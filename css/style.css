@@ -531,8 +531,8 @@ h6,
   }
 }
 .vendor-carousel .item img {
-  width: 150px;      /* fixed width */
-  height: 80px;      /* fixed height */
+  width: 150px; /* fixed width */
+  height: 80px; /* fixed height */
   object-fit: contain; /* keeps aspect ratio without cropping */
   margin: auto;
   display: block;
@@ -543,4 +543,12 @@ h6,
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .testimonial-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* show ~5 lines on mobile */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
